@@ -1,6 +1,8 @@
 # Welcome
 
-Launches the richanderson.io web using AWS ECS Fargate.  This is for my personal use, but might be useful if you want to also automate ECS fargate to create a cluster and run a container with public access + remove both.
+This is for my personal use, but might be useful if you want to also automate ECS fargate to create a cluster and run a container with public access + remove both.
+
+Launches the richanderson.io website using AWS ECS Fargate.  
 
 Create a new cluster and start the site in a container:
 
