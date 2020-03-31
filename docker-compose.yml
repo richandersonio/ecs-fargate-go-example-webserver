@@ -1,0 +1,14 @@
+version: '3'
+services:
+  web:
+    image: 518822224191.dkr.ecr.us-east-1.amazonaws.com/richanderson-io:richioweb
+    environment:
+        - PORT=80
+    ports:
+      - "80:80"
+    logging:
+      driver: awslogs
+      options: 
+        awslogs-group: richanderson-ecs
+        awslogs-region: us-east-1
+        awslogs-stream-prefix: web
