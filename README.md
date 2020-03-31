@@ -1,6 +1,6 @@
 # Welcome
 
-Launches the richanderson.io web using AWS ECS Fargate
+Launches the richanderson.io web using AWS ECS Fargate.  This is for my personal use, but might be useful if you want to also automate ECS fargate to create a cluster and run a container with public access + remove both.
 
 Create a new cluster and start the site:
 
@@ -16,16 +16,6 @@ Stop the container and tear down the cluster:
 ./cluster_down.sh
 ```
 
-# Notes
-
-The ecs-params.yml is configured to use an existing VPC + two subnets.  Don't forget to update these if they ever change.
-
-## AWS Help
-
-Don't forget to install the AWS ECS CLI: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ECS_CLI_installation.html
-
-Another useful guide I used:  https://docs.aws.amazon.com/AmazonECS/latest/developerguide/cmd-ecs-cli-up.html
-
 ## View the logs from a running container
 
 ```bash
@@ -37,3 +27,12 @@ Use this command to grab the latest task-id:
 ```bash
 ecs-cli compose --project-name richandersonio-web service ps --cluster-config richandersonio-web --ecs-profile richandersonio-web-profile
 ```
+# Notes
+
+The ecs-params.yml is configured to use an existing VPC + two subnets.  Don't forget to update these if they ever change.
+
+## AWS References / Help
+
+Don't forget to install the AWS ECS CLI: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ECS_CLI_installation.html
+
+Another useful guide I used:  https://docs.aws.amazon.com/AmazonECS/latest/developerguide/cmd-ecs-cli-up.html
