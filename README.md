@@ -26,8 +26,14 @@ Don't forget to install the AWS ECS CLI: https://docs.aws.amazon.com/AmazonECS/l
 
 Another useful guide I used:  https://docs.aws.amazon.com/AmazonECS/latest/developerguide/cmd-ecs-cli-up.html
 
+## View the logs from a running container
 
-## view the logs 
-
-
+```bash
 ecs-cli logs --task-id fbf63be0-4e85-4519-b2d6-ff0d6242c7a9 --follow --cluster-config tutorial --ecs-profile tutorial-profile
+```
+
+Use this command to grab the latest task-id:
+
+```bash
+ecs-cli compose --project-name richandersonio-web service ps --cluster-config richandersonio-web --ecs-profile richandersonio-web-profile
+```
