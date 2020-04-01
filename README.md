@@ -1,8 +1,6 @@
 # Welcome
 
-This is for my personal use, but might be useful if you want to also automate ECS fargate to create a cluster and run a container with public access + remove both.
-
-Launches the richanderson.io website using AWS ECS Fargate.  
+Scripts to automate ECS fargate to create a cluster/service/task and run a publicly expsoed web server in a container.  
 
 Create a new cluster and start the site in a container:
 
