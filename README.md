@@ -18,15 +18,16 @@ Stop the container and tear down the cluster:
 
 ## View the logs from a running container
 
-```bash
-ecs-cli logs --task-id fbf63be0-4e85-4519-b2d6-ff0d6242c7a9 --follow --cluster-config tutorial --ecs-profile tutorial-profile
-```
-
 Use this command to grab the latest task-id:
 
 ```bash
 ecs-cli compose --project-name richandersonio-web service ps --cluster-config richandersonio-web --ecs-profile richandersonio-web-profile
 ```
+
+```bash
+ecs-cli logs --task-id {insert-task-id} --follow --cluster-config tutorial --ecs-profile tutorial-profile
+```
+
 # Notes
 
 The ecs-params.yml is configured to use an existing VPC + two subnets.  Don't forget to update these if they ever change.
