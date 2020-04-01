@@ -1,6 +1,6 @@
 # Welcome
 
-Scripts to automate ECS fargate and create a cluster/service/task and run a publicly exposed [web server](https://github.com/richandersonio/go-example-webserver)in a container.  
+Scripts to automate ECS fargate and create a cluster/service/task and run a publicly exposed [web server](https://github.com/richandersonio/go-example-webserver) in a container.  
 
 Create a new cluster and start the site in a container:
 
